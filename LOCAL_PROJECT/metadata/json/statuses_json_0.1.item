@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:TalendJSON="http://www.talend.org/json" xmlns:TalendMetadata="http://www.talend.org/metadata/connection/2010" xmlns:orgomg.cwm.resource.record="http:///orgomg/cwm/resource/record.ecore">
+  <TalendJSON:JSONFileConnection xmi:id="_M9N64LArEeiH4MxR6JnbiQ" name="statuses_json" dataPackage="_M9N657ArEeiH4MxR6JnbiQ" JSONFilePath="C:/Users/Tomek/Desktop/MOK YOK IT/statuses.json" Encoding="UTF-8" readbyMode="JSONPATH">
+    <schema xmi:id="_M9N64bArEeiH4MxR6JnbiQ" LimitBoucle="50" AbsoluteXPathQuery="$[*]">
+      <schemaTargets xmi:id="_M9N64rArEeiH4MxR6JnbiQ" RelativeXPathQuery="kontakt_id" TagName="kontakt_id"/>
+      <schemaTargets xmi:id="_M9N647ArEeiH4MxR6JnbiQ" RelativeXPathQuery="klient_id" TagName="klient_id"/>
+      <schemaTargets xmi:id="_M9N65LArEeiH4MxR6JnbiQ" RelativeXPathQuery="pracownik_id" TagName="pracownik_id"/>
+      <schemaTargets xmi:id="_M9N65bArEeiH4MxR6JnbiQ" RelativeXPathQuery="status" TagName="status"/>
+      <schemaTargets xmi:id="_M9N65rArEeiH4MxR6JnbiQ" RelativeXPathQuery="kontakt_ts" TagName="kontakt_ts"/>
+    </schema>
+  </TalendJSON:JSONFileConnection>
+  <orgomg.cwm.resource.record:RecordFile xmi:id="_M9N657ArEeiH4MxR6JnbiQ" name="default" dataManager="_M9N64LArEeiH4MxR6JnbiQ">
+    <ownedElement xsi:type="TalendMetadata:MetadataTable" xmi:id="_M9N66LArEeiH4MxR6JnbiQ" id="_jbQqsLAqEeiH4MxR6JnbiQ" label="metadata">
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9N66bArEeiH4MxR6JnbiQ" label="kontakt_id" length="3" talendType="id_Integer" key="true" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9N66rArEeiH4MxR6JnbiQ" label="klient_id" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9N667ArEeiH4MxR6JnbiQ" label="pracownik_id" length="3" talendType="id_Integer" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9N67LArEeiH4MxR6JnbiQ" label="status" length="17" talendType="id_String" pattern="&quot;dd-MM-yyyy&quot;"/>
+      <feature xsi:type="TalendMetadata:MetadataColumn" xmi:id="_M9N67bArEeiH4MxR6JnbiQ" label="kontakt_ts" length="-1" talendType="id_Date" pattern="&quot;yyyy-MM-dd HH:mm:ss&quot;"/>
+    </ownedElement>
+  </orgomg.cwm.resource.record:RecordFile>
+</xmi:XMI>
